@@ -1,0 +1,4 @@
+node_modules/
+deploy.txt
+.vscode
+package-lock.json

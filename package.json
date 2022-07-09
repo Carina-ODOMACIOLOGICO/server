@@ -1,0 +1,56 @@
+{
+  "name": "colegalnode",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com:atoscano/backend_odomaapp.git"
+  },
+  "author": "Alexander Toscano Ricardo <kikret@gmail.com>",
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "serve": "nodemon index.js",
+    "test": "mocha",
+    "docs": "./node_modules/.bin/esdoc -c ./.esdoc.json"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "public/uploads/*",
+      "bin/carina/models/*"
+    ]
+  },
+  "dependencies": {
+    "@socket.io/sticky": "^1.0.0",
+    "async": "^3.2.0",
+    "axios": "^0.24.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "csv-parse": "^5.0.3",
+    "csvtojson": "^2.0.10",
+    "event-stream": "^4.0.1",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "ioredis": "^4.24.5",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.3",
+    "node-json2html": "^2.1.0",
+    "path": "^0.12.7",
+    "socket.io": "^4.0.0",
+    "socket.io-redis": "^6.0.1",
+    "standard-deviation": "^1.0.0",
+    "uuid": "^8.3.2",
+    "variance": "^0.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
